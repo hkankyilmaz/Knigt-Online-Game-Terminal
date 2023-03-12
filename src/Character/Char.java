@@ -2,10 +2,10 @@ package Character;
 
 public abstract class Char {
     String nickName;
-    int healt;
-    int mana;
-    int healtPot;
-    int manaPot;
+    int healt =100;
+    int mana = 100;
+    int healtPot=5;
+    int manaPot=5;
 
     Char (int healt,int mana,int healtPot,int manaPot) {
         this.healt = healt;
@@ -13,6 +13,7 @@ public abstract class Char {
         this.healtPot= healtPot;
         this.manaPot = manaPot;
     }
+
 
 
     public String getNickName() {
