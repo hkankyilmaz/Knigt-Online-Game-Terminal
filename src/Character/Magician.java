@@ -1,10 +1,15 @@
 package Character;
 
+import Inventory.Inventory;
+
 import java.util.Random;
 
 public class  Magician extends Char {
 
-    Magician (int healt, int mana, int healtPot, int manaPot) {
+    Inventory inventory = new Inventory(10,10);
+    String weapon;
+
+    public Magician(int healt, int mana, int healtPot, int manaPot) {
         super(healt, mana, healtPot, manaPot);
     }
 
@@ -37,6 +42,19 @@ public class  Magician extends Char {
         Random r = new Random();
         int result = r.nextInt(high-low) + low;
         return  result;
+    }
+    public void assignWeapon() {
+        this.inventory.assignWeapon("Magician");
+        String res = this.inventory.getWeapon();
+        this.setWeapon(res);
+    }
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
     }
 }
 

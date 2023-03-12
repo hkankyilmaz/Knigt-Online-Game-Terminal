@@ -9,7 +9,7 @@ public class Assasian extends Char {
     Inventory inventory = new Inventory(10,10);
     String weapon;
 
-    Assasian(int healt, int mana, int healtPot, int manaPot) {
+    public Assasian(int healt, int mana, int healtPot, int manaPot) {
         super(healt, mana, healtPot, manaPot);
     }
 
