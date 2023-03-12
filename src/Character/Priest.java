@@ -1,5 +1,4 @@
 package Character;
-
 import Inventory.Inventory;
 
 import java.util.Random;

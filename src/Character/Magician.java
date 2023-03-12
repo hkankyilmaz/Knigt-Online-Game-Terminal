@@ -1,7 +1,5 @@
 package Character;
-
 import Inventory.Inventory;
-
 import java.util.Random;
 
 public class  Magician extends Char {
