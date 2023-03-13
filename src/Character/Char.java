@@ -1,11 +1,12 @@
 package Character;
-
+import Location.Location;
 public abstract class Char {
     String nickName;
     int healt =100;
     int mana = 100;
     int healtPot=5;
     int manaPot=5;
+    Location location;
 
     Char (int healt,int mana,int healtPot,int manaPot) {
         this.healt = healt;

@@ -27,7 +27,6 @@ public class Game {
             player.magicianPlayer.assignWeapon();
         }
 
-
     }
 
     public String selectCharacter() {
@@ -53,9 +52,7 @@ public class Game {
             default:
                 return "none";
 
-
         }
     }
-
 
 }
