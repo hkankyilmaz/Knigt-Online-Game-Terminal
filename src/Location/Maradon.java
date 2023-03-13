@@ -5,7 +5,10 @@ public class Maradon {
 
     int healt;
     int mana;
-
+    Maradon ( int healt, int mana) {
+        this.mana = mana;
+        this.healt=healt;
+    }
     public void increaseHealt(){
         this.healt = healt + 5;
     }

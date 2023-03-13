@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import Inventory.Inventory;
 import Player.Player;
+import Location.Location;
 public class Game {
     String nickName;
     Scanner input = new Scanner(System.in);
@@ -15,6 +16,7 @@ public class Game {
         System.out.println("Welcome to Knight-Online Terminal " + nickName);
         String job = selectCharacter();
         Player player = new Player(job);
+
         if (job.equals("Assasian")) {
             player.assasianPlayer.assignWeapon();
         } else if (job.equals("Warior")) {
@@ -26,6 +28,11 @@ public class Game {
         } else if (job.equals("Magician")) {
             player.magicianPlayer.assignWeapon();
         }
+
+        player.location.whereIam();
+
+
+
 
     }
 

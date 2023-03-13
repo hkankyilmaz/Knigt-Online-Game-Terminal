@@ -6,7 +6,7 @@ public abstract class Char {
     int mana = 100;
     int healtPot=5;
     int manaPot=5;
-    Location location;
+
 
     Char (int healt,int mana,int healtPot,int manaPot) {
         this.healt = healt;
