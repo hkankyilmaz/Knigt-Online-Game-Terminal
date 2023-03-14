@@ -14,6 +14,7 @@ public class Player {
     public Magician magicianPlayer;
     public Location location = new Location(false,true,80,80);
 
+
     public Player (String character) {
         if (character.equals("Assasian")) {
             this.assasianPlayer = new Assasian(80,80,5,5);
